@@ -1,0 +1,59 @@
+body{
+	width:210mm;
+	height:32mm;
+}
+
+div.mae {
+	width:209mm;
+	height:32mm;
+	float: left;
+	
+}
+
+
+
+div.brasao{
+	width:29mm;
+	height:32mm;
+	float: left;
+	padding-left:20mm;
+	
+}
+
+div.ddorgao{
+	
+	width:106mm;
+	height:32mm;
+	float: left;
+	
+}
+
+div.logo{
+	width:34mm;
+	height:32mm;
+	float: left;
+	padding-right:15mm;
+}
+
+
+
+ h3 {
+ text-align: center;
+ color: #FFFFF;
+  font-size: 13pt;
+  line-height: 1;
+  }
+  
+ h4 {
+ text-align: center;
+ color: #FFFFF;
+  font-size: 11pt;
+  line-height: 0.3;
+  }
+  
+  p {
+ text-align: center;
+ color: #FFFFF;
+  font-size: 10pt;
+  line-height: 1;
+  }

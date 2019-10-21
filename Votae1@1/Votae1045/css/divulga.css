@@ -1,0 +1,432 @@
+@media screen and (max-width: 1921px){
+
+body 
+{background-color: black;
+border: 2px;
+}
+
+img.logo{
+  height: auto;  /* altura da div*/
+left: 40%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ margin: -240px 0 0 -320px;
+ position: absolute;
+ top: 26%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+}
+
+img.index{
+width: 80px;
+height: 60px;
+}
+
+
+
+img.direc{
+	margin-bottom: 5px;
+width: 140px;
+height: 105px;
+}
+/* divs */
+
+
+#tudo{
+background-color: #3CB371;
+height: auto;    /* altura da div*/
+left: 40%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ position: absolute;
+ margin: -240px 0 0 -320px;
+ top: 43%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+z-index:100;
+}
+
+#tudo_bol{
+background-color: #3CB371;
+height: auto;    /* altura da div*/
+left: 40%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ position: absolute;
+ margin: -240px 0 0 -320px;
+ top: 33%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+z-index:100;
+}
+
+#logos{
+ width: 900px; /* largura da DIV*/
+ height: 150px;
+ float: right;
+ padding: 10px;
+}
+
+
+#index{
+width: 200px; /* largura da DIV*/
+height: 450px;
+}
+
+#sobre{
+padding: 25px;
+}
+
+#dados{
+background-color: white;
+}
+
+#requis {
+background-color: white;
+ width: 60px; /* largura da DIV*/
+ height: 50px;
+}
+
+
+td {
+text-align: center;
+border: 0px solid #000111;
+padding-left: 10px;
+}
+
+/*   fontes*/
+
+span{
+text-align: justify;
+color: #FFD700;
+font-size: 12pt;
+font-family: Verdana;
+}
+
+span.color{
+text-align: justify;
+color: red;
+font-size: 11pt;
+font-family: Verdana;
+}
+
+span.colorb{
+text-align: justify;
+color: #CCFFFF;
+font-size: 11pt;
+font-family: Verdana;
+}
+
+
+span.obrig{
+color: red;
+font-size: 15pt; 
+}
+
+ p {
+ text-align: justify;
+ font-size: 11pt;
+ font-family: serif;
+text-indent: 5px;
+color: #000033;
+ }
+ 
+ p.autor {
+ text-align: justify;
+ font-size: 11pt;
+ font-family: serif;
+text-indent: 35px;
+color: #FFDEAD;
+ background-color: ;
+ }
+
+p.center {
+ text-align: center;
+ font-size: 11pt;
+ font-family: serif;
+color: #000033;
+} 
+
+p.direita{
+ text-align: right;
+ font-size: 11pt;
+ font-family: serif;
+ color: #000033;
+} 
+
+ h1 {
+ text-align:center;
+ font-size: 20pt;
+ color:#000033;
+ }
+ 
+  h1.e {
+ text-align:center;
+ font-size: 30pt;
+ color:  #FFFFFF;
+ }
+
+h2 {
+ text-align: center;
+ font-size: 18pt;
+ color: #000033;
+}
+ 
+ h3, h4 {
+ text-align: center;
+ color: #FFA522;
+  font-size: 15pt; 
+  }
+
+  h3.a {
+ text-align: center;
+ color: #F0FFF0;
+  font-size: 18pt; 
+  background-color: black;
+  }
+  
+  h5 {
+ text-align: center;
+ color: blue;
+  font-size: 15pt; 
+  }
+
+#autor{
+float: right;	
+	
+}
+}
+
+
+
+/* inicia NOVA MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+@media screen and (max-width: 1601px){
+
+
+
+/* divs */
+
+img.index{
+width: 80px;
+height: 50px;
+}
+
+img.logosmd{
+width: 300px;
+height: 118px;
+}
+
+img.logo{
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ margin: -240px 0 0 -320px;
+ position: absolute;
+ top: 32%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+}
+
+#tudo_bol{
+background-color: #3CB371;
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ position: absolute;
+ margin: -240px 0 0 -320px;
+ top: 51%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+z-index:100;
+}
+
+
+#logos{
+ width: 400px; /* largura da DIV*/
+ height: 250px;
+ float: right;
+ padding: 10px;
+}
+
+}
+
+
+
+/* inicia NOVA MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+@media screen and (max-width: 1367px){
+
+
+/* divs */
+
+img.index{
+width: 80px;
+height: 50px;
+}
+
+img.logosmd{
+width: 300px;
+height: 118px;
+}
+
+img.logo{
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ margin: -240px 0 0 -320px;
+ position: absolute;
+ top: 26%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+}
+
+#tudo_bol{
+background-color: #3CB371F;
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ position: absolute;
+ margin: -240px 0 0 -320px;
+ top: 43%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+z-index:100;
+}
+
+
+}
+
+
+/* inicia NOVA MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+@media screen and (max-width: 1024px){
+
+
+/* divs */
+
+img.index{
+width: 80px;
+height: 50px;
+}
+
+img.logosmd{
+width: 300px;
+height: 118px;
+}
+
+img.logo{
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ margin: -240px 0 0 -320px;
+ position: absolute;
+ top: 26%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+}
+
+#tudo_bol{
+background-color: #3CB371;
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ position: absolute;
+ margin: -240px 0 0 -320px;
+ top: 43%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+z-index:100;
+}
+
+
+}
+
+
+
+/* inicia NOVA MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+@media screen and (max-width: 961px){
+
+
+
+/* divs */
+
+img.index{
+width: 80px;
+height: 50px;
+}
+
+img.logosmd{
+width: 300px;
+height: 118px;
+}
+
+img.logo{
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ margin: -240px 0 0 -320px;
+ position: absolute;
+ top: 32%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+}
+
+#tudo_bol{
+background-color: #3CB371;
+height: auto;    /* altura da div*/
+left: 34%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ position: absolute;
+ margin: -240px 0 0 -320px;
+ top: 51%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 940px; /* largura da DIV*/
+z-index:100;
+}
+
+
+
+/*#logos{ */
+ /* width: 700px; /* largura da DIV*/
+ /* height: 100px; */
+ /* float: right;
+ padding-top: 10px;  */
+}/* largura da DIV*/
+
+
+#index{
+	width: 700px; /* largura da DIV*/
+padding-left: 25px;
+float: left;
+height: 150px;
+}
+
+
+#autor{
+	width: 300px; /* largura da DIV*/
+float: right;	
+	background-color: white;
+}
+
+
+}
+
+
+
+/* inicia NOVA MEDIA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+@media screen and (max-width: 845px){
+
+#tudo_bol{
+background-color: #CCCCFF;
+height: auto;    /* altura da div*/
+left:40%;  /* 50% da esquerda da tela ou seja centro na horizontal*/
+ position: absolute;
+ margin: -240px 0 0 -320px;
+ top: 51%;  /*  50% longe do topo, ou seja meio da tela na vertical */
+ width: 810px; /* largura da DIV*/
+z-index:100;
+}
+
+
+#logos{
+ width: 400px; /* largura da DIV*/
+ height: 250px;
+ float: right;
+ padding: 10px;
+}
+
+}
+

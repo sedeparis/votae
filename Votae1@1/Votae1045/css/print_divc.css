@@ -1,0 +1,48 @@
+@charset "utf-8";
+body {
+width: 210mm;
+height: 297mm;
+
+}
+
+@page 
+{
+width: 210mm;
+height: 297mm;
+}
+
+div.cabecalho{
+width: 210mm;
+height:40mm;
+background-color: red;
+border: 1px solid black;
+}
+
+div.titulo {
+width: 175mm;
+height:20mm;
+background-color: blue ;
+padding-left: 20mm;
+padding-right: 15mm;
+float:left;
+border: 1px solid black;
+}
+
+div.textos {
+width: 175mm;
+background-color: yellow ;
+padding-left: 20mm;
+padding-right: 15mm;
+float:left;
+Padding-top: 0mm;
+padding-bottom: 5mm;
+border: 1px solid black;
+}
+
+div.tabela{
+width: 175mm; 	
+padding-left: 20mm;
+padding-right: 15mm;
+border: 1px solid black;
+background-color: green ;
+}
