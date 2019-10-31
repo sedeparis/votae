@@ -16,16 +16,16 @@ include ("conecta_banco.php");
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	function validacao() {
-	if(document.form.user.value=="")
+	if(document.form.cod.value=="")
 	{
-	alert("Por favor informe o nome de usuario.");
-	document.form.user.focus();
+	alert("Por favor informe o seu código de usuario.");
+	document.form.cod.focus();
 	return false;
 	}
-	if(document.form.verificador.value=="")
+	if(document.form.email.value=="")
 	{
-	alert("Por favor informe o código verificador.");
-	document.form.verificador.focus();
+	alert("Por favor informe o email.");
+	document.form.email.focus();
 	return false;
 	}
 	}
@@ -36,19 +36,15 @@ include ("conecta_banco.php");
 		<img src="img/logop.jpg">
 		<h2>Esqueci minha senha</h2>
 		<br />
-		<form name="form" action="exec_esqueci_senha.php" method="post" onSubmit="return validacao();">
+		<form name="form" action="new_senha.php" method="post" onSubmit="return validacao();">
 			<fieldset class="grupo">
 			<div class="form-group">
-			<label>Informe seu usuário:</label>
-			<input  class="form-control" type="text" name="user" size="30" />
-			</div>
-			<div class="form-group">
-			<label>Informe seu código verificador recebido pelo e-mail:</label>
-			<input class="form-control" type="text" size="5" name="verificador" />
+			<label>Informe seu e-mail:</label>
+			<input class="form-control" type="text" size="5" name="email" />
 			</div>
 			</fieldset>
 			<div class="form-group">
-			<input type="submit" name="buscad" value="Buscar"/>
+			<input type="submit" name="buscad" value="Recuperar senha"/>
 			<input type="reset" name="reset" value="Limpar"/>
 			<input type="button" name="cancela" value="Cancelar" onclick="window.location.href='indexu.php'"/>
 			</div>

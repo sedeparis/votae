@@ -57,7 +57,7 @@ return false;
 <input type="submit" value="Administrar"/>
 <input type="reset" value="Limpar"/>
 <input type="button" name="cancela" value="Cancelar" onclick="window.location.href='../index.php'"/>
-<input type="button" name="esqsenha" value="Esqueci minha senha" onclick="window.location.href='esqueci_senha.php'"/>
+<input type="button" name="esqsenha" value="Esqueci minha senha" onclick="window.location.href='rec_senha/?pagina=recuperar'"/>
 </div>
 </fieldset>
 </form>
