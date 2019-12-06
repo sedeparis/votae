@@ -1,1 +1,0 @@
-ALTER TABLE logs_eventos ADD iduser int(4) AFTER data;
