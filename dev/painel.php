@@ -66,7 +66,7 @@
 						<!-- 1 new -->
 						<div class="col-md-3 col-sm-6">
 							<div class="service-item">
-							<a href="votacao/user_cript.php" class="btn btn-light">
+							<a href="blank.php" class="btn btn-light">
 							<span class="fa-stack fa-2x">
 							<i class="fa fa-user fa-stack-2x"></i>
 							</span>
@@ -108,7 +108,7 @@
 						<!--4 new -->
 						<div class="col-md-3 col-sm-6">
 							<div class="service-item">
-							<a href="alterar_senha.php" class="btn btn-light">
+							<a href="senha/index.php?pagina=recuperar" class="btn btn-light">
 							<span class="fa-stack fa-2x">
 							<i class="fa fa-unlock fa-stack-2x"></i>
 							</span>

@@ -9,7 +9,7 @@
 	}
 	$logado=$_SESSION['email'];
 	echo $logado;
-	include 'conecta_banco.php';
+	include '../conecta_banco.php';
 	echo '</div>';
 	if ($logado== ''){
 	exit;
@@ -25,12 +25,12 @@
 	<meta name="author" content="">
 	<title>VOTAe</title>
 	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="../css/bootstrap.css" rel="stylesheet">
 	<!-- Custom CSS -->
-	<link href="css/stylish-portfolio.css" rel="stylesheet">
+	<link href="../css/stylish-portfolio.css" rel="stylesheet">
 	<!-- Custom Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/jpg" href="img/icone_barra.jpg">
+	<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/jpg" href="../img/icone_barra.jpg">
 </head>
 <body>
 	<section id="about" class="about">
@@ -44,7 +44,7 @@
 				<div class="col-lg-10 col-lg-offset-1">
 					<div class="row">
 						<p>Em desenvolvimento...
-						<input type="button" name="cancela" value="<< Voltar" class="btn btn-dark" onclick="window.location.href='painel.php'"/>
+						<input type="button" name="cancela" value="<< Voltar" class="btn btn-dark" onclick="window.location.href='admince.php'"/>
 						</p>
 					</div>
 					<!-- /.row (nested) -->

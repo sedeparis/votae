@@ -53,7 +53,7 @@
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="service-item">
-								<a href="ce/indexc.php" class="btn btn-light">
+								<a href="ce/indexce.php" class="btn btn-light">
 								<span class="fa-stack fa-4x">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-building fa-stack-1x text-primary"></i>

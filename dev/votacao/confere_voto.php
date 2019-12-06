@@ -124,7 +124,7 @@ include "../conecta_banco.php";
 						?>
 						
 
-<input type="button" name="cancela" value="Voltar" onclick="window.location.href='../painel.php'"/>
+<input type="button" name="cancela" value="<< Voltar" class="btn btn-dark" onclick="window.location.href='../painel.php'"/>
 				</div>
 					<!-- /.row (nested) -->
 				</div>
