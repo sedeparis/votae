@@ -25,84 +25,101 @@ include ("../../conecta_banco.php");
 	<script src="../../js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<?php
-		$nchapa=(int)$_POST['nchapa'];
-		$nome=$_POST['nome'];
-		$ide=$_POST['eleicao'];
-		$representa= $_POST['representa'];
-		//unifica numero e nome da chapa
-		$dchapa= $nchapa.'- '.$nome;
-		$dupesql = "SELECT * FROM chapas WHERE chapa= '$dchapa' AND ideleicao='$ide'";
-		$duperaw = mysqli_query($mysqli, $dupesql) or die(mysqli_error($mysqli));
-		if (mysqli_num_rows($duperaw) > 0) {
-		echo 'Chapa '. $nchapa. ' já cadastrado. ';
-		echo '<br>Volte para a tela anterior e informe outras chapas!<br> <a href=../cd_chapas.php>Voltar</a>';
-		}
-		else 
-		{
-			// Cria uma variável que terá os dados do erro
-				$erro = false;
+	<section id="about" class="about">
+		<?php include_once "../about.php"?>
+	</section>
+		<!-- Services -->
+		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+	<section id="services" class="services bg-primary-b">
+		<div class="row ">
+			<div class="col-lg-10 col-lg-offset-1">
+				<div class="row">
+					<div class="container">
+						<?php
+						$nchapa=(int)$_POST['nchapa'];
+						$nome=$_POST['nome'];
+						$ide=$_POST['eleicao'];
+						$representa= $_POST['representa'];
+						//unifica numero e nome da chapa
+						$dchapa= $nchapa.'- '.$nome;
+						$dupesql = "SELECT * FROM chapas WHERE chapa= '$dchapa' AND ideleicao='$ide'";
+						$duperaw = mysqli_query($mysqli, $dupesql) or die(mysqli_error($mysqli));
+						if (mysqli_num_rows($duperaw) > 0) {
+						echo 'Chapa '. $nchapa. ' já cadastrado. ';
+						echo '<br>Volte para a tela anterior e informe outras chapas!<br> <a href=../cd_chapas.php>Voltar</a>';
+						}
+						else 
+						{
+							// Cria uma variável que terá os dados do erro
+								$erro = false;
 
-				//trata
-				// Verifica se o POST tem algum valor 
-				if ( !isset( $_POST['nome'] ) || empty( $_POST['nome'] ) ) {
-				$erro = 'O Campo nome não foi informado.';
-				}
-				// ver tamanho dos campos
-				if(strlen($nome) <= 3)
-				{
-				   $erro = 'Erro: Nome da chapa deve ter descrição com mais de 3 caracteres.<br>';
-				} 
-				// limpa tags e espaços nome
-				$nome = trim( strip_tags( $nome ) );
-				
-				//********************************************************
-				
-				//trata
-				// Verifica se o POST tem algum valor 
-				if ( !isset( $_POST['representa'] ) || empty( $_POST['representa'] ) ) {
-				$erro = 'O Campo nome do representante não foi informado.';
-				}
-				// ver tamanho dos campos
-				if(strlen($representa) <= 3)
-				{
-				   $erro = 'Erro: Nome do representante deve ter descrição com mais de 5 caracteres.<br>';
-				} 
-				// limpa tags e espaços nome
-				$representa = trim( strip_tags( $representa ) );
-				
-				//********************************************************
-				//trata
-				// Verifica se o POST tem algum valor 
-				if ( !isset( $_POST['eleicao'] ) || empty( $_POST['eleicao'] ) ) {
-				$erro = 'O Campo eleicao não foi selecionada.';
-				}
-				
-				// limpa tags e espaços 
-				$ide = trim( strip_tags( $ide ) );
-				
-				if (!is_numeric($ide)) {
-				$erro = "Você esqueceu de Selecionar a eleicao";}
-				
-				//********************************************************
-				// *******************  Se existir algum erro, mostra o erro
-				if ( $erro ) {
-				echo $erro;
-				echo '<br>Volte para a tela anterior e informe os dados corretamente!<br> <a href=../cd_chapas.php>Voltar</a>';
-				} else 
-					{
-				
-						$sql =("INSERT INTO chapas (situacao, chapa, ideleicao, representante)
-						VALUES('Ativo', '$dchapa', '$ide', '$representa' )");
-						$resultado = mysqli_query ($mysqli, $sql) or die(mysqli_error($mysqli));
-						{echo "Cadastro efetuado com sucesso!";}
-					}
-			?>
-			<?php
-			echo "<meta HTTP-EQUIV='refresh' CONTENT='3;URL=../admince.php'>";
-		}
-		?>
-	</div>
+								//trata
+								// Verifica se o POST tem algum valor 
+								if ( !isset( $_POST['nome'] ) || empty( $_POST['nome'] ) ) {
+								$erro = 'O Campo nome não foi informado.';
+								}
+								// ver tamanho dos campos
+								if(strlen($nome) <= 3)
+								{
+								   $erro = 'Erro: Nome da chapa deve ter descrição com mais de 3 caracteres.<br>';
+								} 
+								// limpa tags e espaços nome
+								$nome = trim( strip_tags( $nome ) );
+								
+								//********************************************************
+								
+								//trata
+								// Verifica se o POST tem algum valor 
+								if ( !isset( $_POST['representa'] ) || empty( $_POST['representa'] ) ) {
+								$erro = 'O Campo nome do representante não foi informado.';
+								}
+								// ver tamanho dos campos
+								if(strlen($representa) <= 3)
+								{
+								   $erro = 'Erro: Nome do representante deve ter descrição com mais de 5 caracteres.<br>';
+								} 
+								// limpa tags e espaços nome
+								$representa = trim( strip_tags( $representa ) );
+								
+								//********************************************************
+								//trata
+								// Verifica se o POST tem algum valor 
+								if ( !isset( $_POST['eleicao'] ) || empty( $_POST['eleicao'] ) ) {
+								$erro = 'O Campo eleicao não foi selecionada.';
+								}
+								
+								// limpa tags e espaços 
+								$ide = trim( strip_tags( $ide ) );
+								
+								if (!is_numeric($ide)) {
+								$erro = "Você esqueceu de Selecionar a eleicao";}
+								
+								//********************************************************
+								// *******************  Se existir algum erro, mostra o erro
+								if ( $erro ) {
+								echo $erro;
+								echo '<br>Volte para a tela anterior e informe os dados corretamente!<br> <a href=../cd_chapas.php>Voltar</a>';
+								} else 
+									{
+										$sql =("INSERT INTO chapas (situacao, chapa, ideleicao, representante)
+										VALUES('Ativo', '$dchapa', '$ide', '$representa' )");
+										$resultado = mysqli_query ($mysqli, $sql) or die(mysqli_error($mysqli));
+										{echo "Cadastro efetuado com sucesso!";}
+									}
+							?>
+							<?php
+							echo "<meta HTTP-EQUIV='refresh' CONTENT='3;URL=../admince.php'>";
+						}
+						?>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.col-lg-10 -->
+		</div>
+	</section>
+	<footer>
+		<?php include_once "../footer.php"?>
+	</footer>
 </body>
 </html>

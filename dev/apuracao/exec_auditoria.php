@@ -26,8 +26,8 @@
 		</div>
 		<?php
 		//insere dados no logeventos
-		$sql = mysqli_query($mysqli,"INSERT INTO logs_eventos (evento, valor, ideleicao,  data)
-		VALUES('Relatório para auditoria', '$senhac', '$eleicao', '$data')");
+		$sql = ("INSERT INTO logs_eventos (evento, valor, ideleicao,  data, iduser)
+		VALUES('Relatório para auditoria', '$senhac', '$eleicao', '$data', '$iduser')");
 		$resultado = mysqli_query ($mysqli, $sql)  or die(mysqli_error($mysqli));
 		{echo "";}
 		?>

@@ -8,7 +8,6 @@ echo "Voce está logado como: ";
 echo $_SESSION['email'];
 echo "</div>";
 include_once "../conecta_banco.php";
-
 ?>
 <!DOCTYPE HTML>
 <html lang="pt_BR">
@@ -78,9 +77,9 @@ include_once "../conecta_banco.php";
 									
 									// ver tamanho dos campos
 											
-											if(strlen($senha) <= 5)
+											if(strlen($senha) <= 4)
 									{
-									   $erro = 'Erro: A senha deve ter mais de 5 caracteres.<br>';
+									   $erro = 'Erro: A senha deve ter mais de 4 caracteres.<br>';
 									} 
 									// limpa tags e espaços 
 									$senha  = trim( strip_tags( $senha ) );
@@ -104,7 +103,6 @@ include_once "../conecta_banco.php";
 											{
 												include_once "exec_zeresima.php"; 
 											}
-											 
 										}
 										?>
 						</div>

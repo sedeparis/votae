@@ -65,9 +65,9 @@ include_once "../conecta_banco.php";
 					
 					// ver tamanho dos campos
 							
-							if(strlen($senha) <= 5) 
+							if(strlen($senha) <= 4) 
 					{
-					$erro = 'Erro: A senha deve ter mais de 5 caracteres.<br>' ;
+					$erro = 'Erro: A senha deve ter mais de 4 caracteres.<br>' ;
 					} 
 					// limpa tags e espaços 
 					$senha  = trim( strip_tags( $senha ) );
