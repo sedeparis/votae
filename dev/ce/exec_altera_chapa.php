@@ -50,7 +50,8 @@ include ("../conecta_banco.php");
 	// inicia o loop que vai mostrar todos os dados
 	do {
 	$id=$linha['idchapa'];
-	$nome=$linha['chapa'];
+	$chapa=$linha['chapa'];
+	$nchapa=$linha['nchapa'];
 	$ide=$linha['ideleicao'];
 	$representa=$linha['representante'];
 	$situacao=$linha['situacao'];
@@ -65,13 +66,15 @@ include ("../conecta_banco.php");
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="row">
 					<div class="container">
-						<h2>Alterar Chapa ou propostas</h2>
+						<h2>Alterar chapa ou propostas</h2>
 						<form name="form" method="post" action="salva/salva_altera_chapa.php" onSubmit="return validacao();">
 							<fieldset class="grupo">
 							<div class="form-group">
 							<input type="hidden" name="id" value="<?php print "$id"?>"/>
-							<label><b>Número - Nome do chapa:</b></label>
-							<input type="text"  class="form-control" name="chapa" size="30" value=" <?php print "$nome" ?>"/>
+							<label><b>Número:</b></label>
+							<input type="text"  class="form-control" name="nchapa" size="30" value=" <?php print "$nchapa" ?>"/>
+							<label><b>Nome do chapa:</b></label>
+							<input type="text"  class="form-control" name="chapa" size="30" value=" <?php print "$chapa" ?>"/>
 							</div>
 							</fieldset>
 							<div class="form-group">
@@ -81,7 +84,7 @@ include ("../conecta_banco.php");
 							<fieldset class="grupo">
 							<div class="form-group">
 							<?php
-							$query = mysqli_query($mysqli, "SELECT * FROM eleicoes WHERE concluida = 'N' AND (aberta=0)");
+							$query = mysqli_query($mysqli, "SELECT * FROM eleicoes WHERE concluida ='N' AND (aberta=0)");
 							?>
 							<label for="">Eleição</label>
 							<select class="form-control" name="eleicao">

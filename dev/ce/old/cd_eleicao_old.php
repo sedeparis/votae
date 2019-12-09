@@ -74,6 +74,32 @@ include ("../conecta_banco.php");
 							<input class="form-control" type="time" id="horari" name="horaf" maxlength="5" required onkeypress="mascara(this, '##:##')"/>
 							</div>
 							</fieldset>
+							<div class="form-group">
+							<?php
+							$query = mysqli_query($mysqli, "SELECT * FROM condicao");
+							?>
+							<label for="">Permite voto branco? Se sim o sistema criará uma chapa de código 100 para computar votos em branco.</label>
+							<select class="form-control" name="branco">
+							<option  class="form-control" class="form-control" name="">Selecione...</option>
+							<?php while($var = mysqli_fetch_array($query)) { ?>
+							<option class="form-control" value="<?php echo $var['id'] ?>"><?php echo $var['sn'] ?></option>
+							<?php } ?>
+							</select>
+							</div>
+							</fieldset>
+							<div class="form-group">
+							<?php
+							$query = mysqli_query($mysqli, "SELECT * FROM condicao");
+							?>
+							<label for="">Permite voto nulo? Se sim, o sistema criará uma chapa de código 99 para computar votos nulos.</label>
+							<select class="form-control" name="nulo">
+							<option class="form-control" class="form-control" name="">Selecione...</option>
+							<?php while($var = mysqli_fetch_array($query)) { ?>
+							<option  class="form-control" value="<?php echo $var['id'] ?>"><?php echo $var['sn'] ?></option>
+							<?php } ?>
+							</select>
+							</div>
+							</fieldset>
 							<fieldset class="grupo">
 							<div class="form-group">
 							<input type="submit" id="submit" value="Executar" class="btn btn-primary"/>

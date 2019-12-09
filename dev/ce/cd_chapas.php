@@ -53,8 +53,8 @@ include ("../conecta_banco.php");
 							</fieldset>
 							<fieldset class="grupo">
 								<div class="form-group">
-								<label>Numero da chapa: (exceto códigos 99 e 100 reservados pelo sistema):</label>
-								<input class="form-control" type="number" name="nchapa"  size="4" min="1" max="19" />
+								<label>Numero da chapa: (máximo 999) </label>
+								<input class="form-control" type="number" name="nchapa"  size="4" min="0" max="999" />
 								</div>
 								<div class="form-group">
 								<label>Nome da chapa:</label>

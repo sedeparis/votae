@@ -54,7 +54,7 @@ include ("../conecta_banco.php");
 							<fieldset class="grupo">
 								<div class="form-group">
 								<label>Instruções para votação:</label>
-								<textarea class="form-control" name="ivotacao" id="ivotacao" rows="6" cols="40" placeholder="Digite aqui as instruções de votação.
+								<textarea class="form-control" name="ivotacao" id="ivotacao" rows="6" cols="40" placeholder="Digite aqui as instruções de votação. Ex.:
 								Para votar Sim = insira 1 ou 01 e clique em votar.
 								Não = 2, ou 02 e clique em votar
 								Abstenção = qualquer outra combinação de numero e e clique em votar." /></textarea>

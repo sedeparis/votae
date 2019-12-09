@@ -26,7 +26,7 @@ include ("../../conecta_banco.php");
 </head>
 <body>
 	<section id="about" class="about">
-		<?php include_once "../about.php"?>
+		<?php include_once "about.php"?>
 	</section>
 		<!-- Services -->
 		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
@@ -42,7 +42,7 @@ include ("../../conecta_banco.php");
 						$representa= $_POST['representa'];
 						//unifica numero e nome da chapa
 						$dchapa= $nchapa.'- '.$nome;
-						$dupesql = "SELECT * FROM chapas WHERE chapa= '$dchapa' AND ideleicao='$ide'";
+						$dupesql = "SELECT * FROM chapas WHERE chapa= '$nchapa' AND ideleicao='$ide'";
 						$duperaw = mysqli_query($mysqli, $dupesql) or die(mysqli_error($mysqli));
 						if (mysqli_num_rows($duperaw) > 0) {
 						echo 'Chapa '. $nchapa. ' já cadastrado. ';
@@ -101,8 +101,8 @@ include ("../../conecta_banco.php");
 								echo '<br>Volte para a tela anterior e informe os dados corretamente!<br> <a href=../cd_chapas.php>Voltar</a>';
 								} else 
 									{
-										$sql =("INSERT INTO chapas (situacao, chapa, ideleicao, representante)
-										VALUES('Ativo', '$dchapa', '$ide', '$representa' )");
+										$sql =("INSERT INTO chapas (situacao, nchapa, chapa, ideleicao, representante)
+										VALUES('Ativo', '$nchapa', '$nome', '$ide', '$representa' )");
 										$resultado = mysqli_query ($mysqli, $sql) or die(mysqli_error($mysqli));
 										{echo "Cadastro efetuado com sucesso!";}
 									}
@@ -119,7 +119,7 @@ include ("../../conecta_banco.php");
 		</div>
 	</section>
 	<footer>
-		<?php include_once "../footer.php"?>
+		<?php include_once "footer.php"?>
 	</footer>
 </body>
 </html>

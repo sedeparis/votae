@@ -26,7 +26,7 @@
 </head>
 <body>
 	<section id="about" class="about">
-		<?php include_once "../about.php"?>
+		<?php include_once "about.php"?>
 	</section>
 		<!-- Services -->
 		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
@@ -39,15 +39,12 @@
 							$id=$_POST['id'];
 							$eleicao=$_POST['eleicao'];
 							$proposta=$_POST['proposta'];
-							$branco=$_POST['branco'];
-							$nulo=$_POST['nulo'];
 							$data=$_POST['data'];
 							$horai=$_POST['horai'];
 							$horaf=$_POST['horaf'];
-							echo $tipo=$_POST['tipo'];
+							$tipo=$_POST['tipo'];
 							//echo $data;
-		
-						//*********************************************************************
+							//*********************************************************************
 							// cria variavel para identificar erros
 							$erro=false;
 							
@@ -77,31 +74,7 @@
 							} 
 							//limpa tags e espaços 
 							$proposta = trim( strip_tags( $proposta ) );
-
-							//*********************************************************************
-							//trata branco
-							// Verifica se o POST  tem algum valor 
-							if ( !isset( $_POST['branco'] ) || empty( $_POST['branco'] ) ) {
-							$erro = 'Campo voto branco não selecionado.<br>';
-							}
-							if (!is_numeric($branco)) {
-							$erro = 'Campo voto branco não selecionado.<br>';}
-							//limpa tags e espaços 
-							$branco = trim( strip_tags( $branco ) );
-				
-				
-							//*********************************************************************
-							//trata nulo
-							// Verifica se o POST  tem algum valor 
-							if ( !isset( $_POST['nulo'] ) || empty( $_POST['nulo'] ) ) {
-							$erro = 'Campo voto nulo não selecionado.<br>';
-							}
-							if (!is_numeric($nulo)) {
-							$erro = 'Campo voto nulo não selecionado.<br>';}
-							//limpa tags e espaços 
-							$nulo = trim( strip_tags( $nulo ) );
-							
-							//*********************************************************************
+								// ******************* 
 							//trata tipo
 							// Verifica se o POST  tem algum valor 
 							if ( !isset( $_POST['tipo'] ) || empty( $_POST['tipo'] ) ) {
@@ -121,40 +94,14 @@
 							else 
 							{
 								//alterar eleicao na tabela eleicoes
-								$sql = ("UPDATE eleicoes SET eleicao='$eleicao', proposta='$proposta', 
-								branco='$branco', nulo='$nulo', data='$data', hora='$horai, horaf='$horaf', tipo='$tipo' ");
+								$sql = ("UPDATE eleicoes SET eleicao='$eleicao', proposta='$proposta', data='$data', hora='$horai', horaf='$horaf', tipo='$tipo' WHERE ideleicao='$id' ");
 								
 								$resultado = mysqli_query ($mysqli, $sql) or die(mysqli_error($mysqli));	
 								{
 									echo "Cadastro alterado com sucesso!";
-								}
-
-								if ($branco == 2){ echo 'Chapa branco nao salva';}
-								else 
-								{
-											$sql =("UPDATE chapas SET chapa='100 - Branco', representante='Voto em Branco' WHERE ideleicao='$id'");
-											
-											$resultado = mysqli_query ($mysqli, $sql) or die(mysqli_error($mysqli));
-											{
-												echo "<br>Chapa Branco alterada com sucesso!";
-											}	
-									}
-									if ($nulo == 2)
-									{
-										echo "Chapa nulo não salva";
-									}
-									else 
-										{
-											$sql2 =("UPDATE chapas SET chapa='100 - Branco', representante='Voto em Branco' WHERE ideleicao='$id'");
-											
-											$resultado2 = mysqli_query ($mysqli, $sql2);
-											{echo "Alteração efetuada com sucesso!";}
-											
-											
-											echo "<meta HTTP-EQUIV='refresh' CONTENT='3;URL=../admince.php'>";
-						
-										}	
-								}
+								}	
+								echo "<meta HTTP-EQUIV='refresh' CONTENT='3;URL=../admince.php'>";
+							}	
 						?>
 					</div>
 				</div>

@@ -52,7 +52,7 @@ echo '</div>';
     </section>
 	<!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-   <section id="services" class="services bg-primary">
+   <section id="services" class="services bg-primary-ii">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -62,8 +62,14 @@ echo '</div>';
                         <span class="fa-stack fa-1x">
                         <i class="fa fa-power-off fa-stack-2x"></i>
 						</span> Sair</a>
-						<hr class="small">
-						<br><br>
+				</div>
+			</div>
+		</div>	
+	</section>					
+	<section id="services" class="services bg-primary">
+		<div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
 						<!-- 1 new -->
                         <div class="col-md-3 col-sm-6">
@@ -115,33 +121,19 @@ echo '</div>';
                         </div>
 					</div>
                     <!-- /.row (nested) -->
+				</div>
+			</div>
 					   <!-- news/.row (nested) -->
+		</div>
+	</section>
+		<!--/section-->
+	<section id="services" class="services bg-primary-ii">	
+		<!-- news/.container -->		
+		<div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
 					<div class="row">
-						<!-- 1 new -->
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-2x">
-                                <i class="fa fa-pencil fa-stack-2x"></i>
-								</span>
-                                <h4>
-                                    <strong>Incluir instrução voto</strong>
-                                </h4>
-                             <a href="ivotacao.php" class="btn btn-light">Acessar</a>
-                            </div>
-                        </div>
-						<!-- 2 new -->
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-2x">
-                                <i class="fa fa-edit fa-stack-2x"></i>
-								</span>
-                                <h4>
-                                    <strong>Alterar instrução de votação</strong>
-                                </h4>
-                                <a href="altera_ivotacao.php" class="btn btn-light">Acessar</a>
-                            </div>
-                        </div>
-						<!-- 3 new -->
+					<!-- 1 new -->
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-2x">
@@ -153,7 +145,7 @@ echo '</div>';
                                 <a href="cd_chapas.php" class="btn btn-light">Acessar</a>
                             </div>
                         </div>
-						<!--4 new -->
+						<!--2 new -->
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-2x">
@@ -163,6 +155,30 @@ echo '</div>';
                                     <strong>Alterar Chapas</strong>
                                 </h4>
                                 <a href="altera_chapa.php" class="btn btn-light">Acessar</a>
+                            </div>
+                        </div>
+						<!-- 3 new -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-2x">
+                                <i class="fa fa-pencil fa-stack-2x"></i>
+								</span>
+                                <h4>
+                                    <strong>Incluir instrução voto</strong>
+                                </h4>
+                             <a href="ivotacao.php" class="btn btn-light">Acessar</a>
+                            </div>
+                        </div>
+						<!-- 4 new -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-2x">
+                                <i class="fa fa-edit fa-stack-2x"></i>
+								</span>
+                                <h4>
+                                    <strong>Alterar instrução de votação</strong>
+                                </h4>
+                                <a href="altera_ivotacao.php" class="btn btn-light">Acessar</a>
                             </div>
                         </div>
                     </div>
@@ -177,11 +193,10 @@ echo '</div>';
 		<!--/section>
 		<!-- Services 2-->
 		<!--section id="services" class="services bg-primary"--->
-	<section id="services" class="services bg-primary-ii">
+	<section id="services" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <hr class="small">
                     <div class="row">
 					<!----1 --->
 						<div class="col-md-3 col-sm-6">
@@ -216,7 +231,7 @@ echo '</div>';
                                 <h4>  
                                     <strong>Autoriza votação</strong>
                                 </h4>                            
-                                <a href="../votacao/liberar_votacao.php" class="btn btn-light">Acessar</a>
+                                <a href="autoriza_votacao.php" class="btn btn-light">Acessar</a>
                             </div>
                         </div>
 						<!----4 --->
@@ -228,12 +243,25 @@ echo '</div>';
                                 <h4>  
                                     <strong>Encerra votação</strong>
                                 </h4>                            
-                                <a href="../votacao/encerra_votacao.php" class="btn btn-light">Acessar</a>
+                                <a href="encerra_votacao.php" class="btn btn-light">Acessar</a>
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
-					<div class="row">
+				</div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+	</section>
+		<!--/section>
+		<!-- Services 2-->
+		<!--section id="services" class="services bg-primary"--->
+	<section id="services" class="services bg-primary-ii">
+         <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="row">
 					<!----1 --->
 						<div class="col-md-3 col-sm-6">
                             <div class="service-item">
@@ -295,7 +323,6 @@ echo '</div>';
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <hr class="small">
                     <div class="row">
 					<!----1 --->
 						<div class="col-md-3 col-sm-6">
@@ -313,12 +340,12 @@ echo '</div>';
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-2x">
-                                 <i class="fa fa-refresh fa-stack-2x"></i>
+                                 <i class="fa fa-list fa-stack-2x"></i>
 								</span>
                                 <h4>  
-                                    <strong>Em construção</strong>
+                                    <strong>Listar votantes</strong>
                                 </h4>                            
-                                <a href="blank.php" class="btn btn-light">Acessar</a>
+                                <a href="relatorios/rvotantes.php" class="btn btn-light">Acessar</a>
                             </div>
                         </div>
 						<!----3 --->

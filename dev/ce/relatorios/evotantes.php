@@ -18,6 +18,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../../css/reset.css" type="text/css"/>
+<link rel="stylesheet" href="../../css/bootstrap.css" type="text/css"/>
 <!--link rel="stylesheet" href="../css/print.css" type="text/css"/-->
 <link rel="stylesheet" href="../../css/estilo_pdo.css" type="text/css"/>
 </head>
@@ -114,10 +115,10 @@
 				<?php
 				// seleciona a eleição
 				$queryc =("SELECT * FROM user
-				INNER JOIN userusers
-				ON userusers.iduser = user.codigo
+				INNER JOIN votantes
+				ON votantes.iduser = user.codigo
 
-				WHERE userusers.ide=1");
+				WHERE votantes.ide=1");
 				// executa a query
 				$dadosc = mysqli_query($mysqli, $queryc) or die(mysqli_error($mysqli));
 				// transforma os dados em um array
@@ -173,20 +174,20 @@
 				mysqli_free_result($dadosc);
 			}
 		?>
-					<br />
-					<br />
-					<table>
-					<tr>
-					<td><br><br>_________________________<br>Assinatura da comissão</td>
-					<td><br><br>_________________________<br>Assinatura da comissão</td>
-					</tr>
-					<tr>
-					<td><br><br>_________________________<br>Assinatura da comissão</td>
-					<td><br><br>_________________________<br>Assinatura da comissão</td>
-					</tr>
-					</table>
-					<br />
-					<input type="button" name="cancela" value="Voltar" onclick="window.location.href='../ce/admince.php'"/>
+				<br />
+				<br />
+				<table>
+				<tr>
+				<td><br><br>_________________________<br>Assinatura da comissão</td>
+				<td><br><br>_________________________<br>Assinatura da comissão</td>
+				</tr>
+				<tr>
+				<td><br><br>_________________________<br>Assinatura da comissão</td>
+				<td><br><br>_________________________<br>Assinatura da comissão</td>
+				</tr>
+				</table>
+				<br />
+				<input type="button" name="cancela" value="Voltar" class="btn btn-light" onclick="window.location.href='../admince.php'"/>
 		</div>
 	</div>
 </body>

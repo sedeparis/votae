@@ -97,6 +97,38 @@ include ("../conecta_banco.php");
 							<fieldset class="grupo">
 								<div class="form-group">
 									<?php	   
+										$query = mysqli_query($mysqli, "SELECT * FROM condicao");
+									?>
+									<label for="">Permitido voto branco</label>		     
+									<select class="form-control" name="branco">
+									<option class="form-control" name="">Selecione...</option>
+									<?php while($var = mysqli_fetch_array($query)) { ?>
+									<option value="<?php echo $var['id'] ?>"
+									<?php echo($var['id'] == $branco ? 'selected' : false); ?>>
+									<?php echo $var['sn'] ?></option>
+									<?php } ?>
+									</select>
+								</div>
+							</fieldset>
+							<fieldset class="grupo">
+								<div class="form-group">
+									<?php	   
+									$query = mysqli_query($mysqli, "SELECT * FROM condicao");
+									?>
+									<label for="">Permitido voto em nulo</label>		     
+									<select class="form-control" name="nulo">
+									<option class="form-control" name="">Selecione...</option>
+									<?php while($var = mysqli_fetch_array($query)) { ?>
+									<option value="<?php echo $var['id'] ?>"
+									<?php echo($var['id'] == $nulo ? 'selected' : false); ?>>
+									<?php echo $var['sn'] ?></option>
+									<?php } ?>
+									</select>
+								</div>
+							</fieldset>
+							<fieldset class="grupo">
+								<div class="form-group">
+									<?php	   
 									$query = mysqli_query($mysqli, "SELECT * FROM tipo_eleicao");
 									?>
 									<label for="">Tipo de eleição</label>		     

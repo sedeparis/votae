@@ -34,7 +34,7 @@ include ("../conecta_banco.php");
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="row">
 					<div class="container">
-						<h2>Alterar Chapa ou propostas</h2>
+						<h2>Alterar chapa ou propostas</h2>
 						<form name="form" method="post" action="exec_altera_chapa.php" onSubmit="return validacao();">
 							<fieldset class="grupo">
 							<div class="form-group">
@@ -48,7 +48,7 @@ include ("../conecta_banco.php");
 								<select class="form-control" name="chapa">
 								<option class="form-control" name="">Selecione...</option>
 								<?php while($setor = mysqli_fetch_array($query)) { ?>
-								<option value="<?php echo $setor['idchapa'] ?>"><?php echo  $setor['eleicao']. '  - '.$setor['chapa'] ?></option>
+								<option value="<?php echo $setor['idchapa'] ?>"><?php echo  $setor['eleicao']. '  - '.$setor['nchapa']. '  - '.$setor['chapa'] ?></option>
 								<?php } ?>
 								</select>
 								</div>

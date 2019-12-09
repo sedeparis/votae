@@ -26,7 +26,7 @@ include ("../../conecta_banco.php");
 </head>
 <body>
 	<section id="about" class="about">
-		<?php include_once "../about.php"?>
+		<?php include_once "about.php"?>
 	</section>
 		<!-- Services -->
 		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
@@ -38,6 +38,7 @@ include ("../../conecta_banco.php");
 						<?php
 						$id=$_POST['id'];
 						$eleicao=$_POST['eleicao'];
+						$nchapa=$_POST['nchapa'];
 						$chapa=$_POST['chapa'];
 						$sit=$_POST['sit'];
 						$representa=$_POST['representa'];
@@ -124,7 +125,7 @@ include ("../../conecta_banco.php");
 		</div>
 	</section>
 	<footer>
-		<?php include_once "../footer.php"?>
+		<?php include_once "footer.php"?>
 	</footer>	
 </body>
 </html>
